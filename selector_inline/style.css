@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+.title{
+    text-align: center;
+}
+
+div.jumbotron{
+    background-color: bisque;
+    padding: 20px;
+    text-align: center;
+
+}
+
+h2.jumbotron{
+    text-transform: uppercase;
+    text-shadow: 3px 5px 10px red;
+}
+
+#desc{
+    text-align: center;
+    font-size: larger;
+    border: 2px solid rgb(255, 187, 0);
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.img-jumbotron{
+    margin-top: 40px;
+    border-radius: 30px;
+}
+
+.product-name{
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 20px;
+}
+
+.price-item{
+    background-color: burlywood;
+    width: 100px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.image-item{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.item-container{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.item{
+    margin: 20px;
+}
