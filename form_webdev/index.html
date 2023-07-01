@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Data</title>
+
+</head>
+<body>
+    <div class="container"  >
+        <h1>Form Data</h1>
+        <form action="result.html"
+        method="GET"
+        novalidate
+        >
+            <div class="input-container">
+                <label for="name">Name : </label>
+                <input type="text" name="name" id="name" class="form-text" placeholder="Please insert your full name"
+                required
+                >
+            </div>
+            <div class="input-container">
+                <label for="password">Password : </label>
+                <input type="password" name="password" id="password" class="form-text"
+                placeholder="Please insert your password"
+                >
+            </div>
+            <div class="input-container">
+                <label for="age">Age : </label>
+                <input type="number" name="age" id="age" class="form-text">
+            </div>
+            <div class="input-container">
+                <label for="country">Country</label>
+                <select name="country" id="country" class="form-text">
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Vietnam">Vietnam</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <label for="age">Address : </label>
+                <textarea name="age" id="age" cols="70" rows="10"></textarea>
+            </div>
+            <input type="submit" class="input-submit">
+        </form>
+    </div>
+</body>
+</html>
