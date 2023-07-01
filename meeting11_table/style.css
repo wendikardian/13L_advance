@@ -1,0 +1,28 @@
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr{
+    border: 1px solid #000000;
+    padding: 10px;
+}
+
+td{
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: center;
+    vertical-align: center;
+}
+
+th{
+    border: 1px solid #000000;
+    padding: 10px;
+    background-color: #f18909;
+    color: #ffffff;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
