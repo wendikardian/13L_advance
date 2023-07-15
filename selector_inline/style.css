@@ -1,79 +1,169 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.header{
-    background-color: antiquewhite;
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: antiquewhite;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-left: 30px;
+}
+
+div.jumbotron {
+  /* background-color: bisque; */
+  background-image: url(cool-background.png);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 20px;
+  text-align: center;
+}
+
+h2.jumbotron {
+  text-transform: uppercase;
+  text-shadow: 3px 5px 10px red;
+}
+
+#desc {
+  text-align: center;
+  font-size: larger;
+  border: 2px solid rgb(255, 187, 0);
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.img-jumbotron {
+  margin-top: 40px;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.product-name {
+  font-size: 32px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 20px;
+}
+
+.price-item {
+  background-color: #d6c34a;
+  background-image: linear-gradient(119deg, #d6c34a 0%, #dea20b 100%);
+  width: 100px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.price-item:hover {
+  background-color: #d6c34a;
+  background-image: linear-gradient(119deg, #d6c34a 0%, #dea20b 100%);
+  width: 100px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.image-item {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.item-container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.item {
+  margin: 20px;
+}
+
+#table-products {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(250, 235, 215, 0.718);
+  /* background-color: #fad961;
+  background-image: linear-gradient(90deg, #fad961 0%, #dde796 100%); */
+
+  padding: 30px;
+}
+
+.table-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th {
+  height: 80px;
+  vertical-align: center;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 8px;
+  border-bottom: 1px solid black;
+  min-width: 200px;
+}
+
+th {
+  background-color: rgba(218, 155, 46, 0.812);
+}
+
+tr:nth-child(even) {
+  background-color: rgba(240, 195, 117, 0.712);
+}
+
+tr:hover {
+  background-color: #f38d28ea;
+  color: white;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+td img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgb(253, 153, 2);
+  opacity: 0.8;
+}
+
+section.footer{
+    background-color: #FAD961;
+background-image: linear-gradient(90deg, #FAD961 0%, #dde796 100%);
+
+    color: rgb(250, 116, 6);
     padding: 20px;
-}
-
-.title{
     text-align: center;
-}
-
-div.jumbotron{
-    background-color: bisque;
-    padding: 20px;
-    text-align: center;
-
-}
-
-h2.jumbotron{
-    text-transform: uppercase;
-    text-shadow: 3px 5px 10px red;
-}
-
-#desc{
-    text-align: center;
-    font-size: larger;
-    border: 2px solid rgb(255, 187, 0);
-    padding: 10px;
-    border-radius: 20px;
-    margin-top: 20px;
-}
-
-.img-jumbotron{
-    margin-top: 40px;
-    border-radius: 30px;
-}
-
-.product-name{
-    font-size: 32px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 20px;
-}
-
-.price-item{
-    background-color: burlywood;
-    width: 100px;
-    margin: auto;
-    padding: 10px;
-    border-radius: 20px;
-}
-
-.image-item{
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-}
-
-.item-container{
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    justify-content: center;
-}
-
-.item{
-    margin: 20px;
 }
