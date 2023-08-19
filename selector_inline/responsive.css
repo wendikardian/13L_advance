@@ -1,0 +1,35 @@
+
+/* Media query max-width 500 */
+/* Path: selector_inline\responsive.css */
+
+/* For mobile only */
+
+@media screen and (max-width: 500px)  {
+    .product-name{
+        color: white;
+    }
+
+    table{
+        max-width: 400px;
+    }
+
+    td{
+        padding: 0;
+        max-width: 100px;
+    }
+
+    .table-container{
+        margin: 0;
+        /* background-color: red; */
+    }
+
+    td img{
+        width: 100px;
+        height: 100px;
+    }
+
+    td{
+        padding: 10px;
+        width: 100px;
+    }
+}
