@@ -12,11 +12,16 @@
         <h1>Form Data</h1>
         <form action="result.html"
         method="GET"
-        novalidate
         >
             <div class="input-container">
                 <label for="name">Name : </label>
                 <input type="text" name="name" id="name" class="form-text" placeholder="Please insert your full name"
+                required
+                >
+            </div>
+            <div class="input-container">
+                <label for="name">Email : </label>
+                <input type="email" name="email" id="email" class="form-text" placeholder="Please insert your full email"
                 required
                 >
             </div>
@@ -27,8 +32,26 @@
                 >
             </div>
             <div class="input-container">
+                <label for="password">Programming Language</label>
+                <br>
+                <input type="checkbox" name="java" id="java"  >
+                <label for="java">Java</label>
+                <input type="checkbox" name="php" id="php"  >
+                <label for="php">PHP</label>
+                <input type="checkbox" name="python" id="python"  >
+                <label for="python">Python</label>
+            </div>
+            <div class="input-container">
                 <label for="age">Age : </label>
                 <input type="number" name="age" id="age" class="form-text">
+            </div>
+            <div class="input-container">
+                <label for="birth">Birth of Date : </label>
+                <input type="date" name="birth" id="birth" class="form-text">
+            </div>
+            <div class="input-container">
+                <label for="age">Phone Number : </label>
+                <input type="number" name="phonenumber" id="age" class="form-text">
             </div>
             <div class="input-container">
                 <label for="country">Country</label>
@@ -40,10 +63,27 @@
                     <option value="Vietnam">Vietnam</option>
                 </select>
             </div>
+            <!-- radio for age category -->
             <div class="input-container">
+                <label for="age">Category</label>
+                <br>
+                <input type="radio" name="category" id="teens">
+                <label for="teens">Teens</label>
+                <input type="radio" name="category" id="adult">
+                <label for="adult">Adult</label>
+                <input type="radio" name="category" id="elder">
+                <label for="elder">Elder</label>
+            </div>
+            <div class="input-container mt-20" >
                 <label for="age">Address : </label>
                 <textarea name="age" id="age" cols="70" rows="10"></textarea>
             </div>
+            <div class="input-container">
+                <label for="image">Image : </label>
+                <input type="file" name="image" id="age" class="form-text">
+            </div>
+            <input type="checkbox" name="final">
+            <label for="final">I agree with the terms and conditions</label>
             <input type="submit" class="input-submit">
         </form>
     </div>
