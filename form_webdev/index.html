@@ -15,14 +15,20 @@
         >
             <div class="input-container">
                 <label for="name">Name : </label>
-                <input type="text" name="name" id="name" class="form-text" placeholder="Please insert your full name"
+                <input type="text" name="name" id="name" class="form-text"
+                placeholder="Please insert your full name"
                 required
+                value="Wendi"
+                disabled
                 >
             </div>
             <div class="input-container">
                 <label for="name">Email : </label>
                 <input type="email" name="email" id="email" class="form-text" placeholder="Please insert your full email"
+                value="wendikardian@gmail.com"
+                readonly
                 required
+                autofocus
                 >
             </div>
             <div class="input-container">
@@ -43,7 +49,10 @@
             </div>
             <div class="input-container">
                 <label for="age">Age : </label>
-                <input type="number" name="age" id="age" class="form-text">
+                <input type="number" name="age" id="age" class="form-text"
+                min="18"
+                max="50"
+                >
             </div>
             <div class="input-container">
                 <label for="birth">Birth of Date : </label>
@@ -67,11 +76,11 @@
             <div class="input-container">
                 <label for="age">Category</label>
                 <br>
-                <input type="radio" name="category" id="teens">
+                <input type="radio" name="category" id="teens" value="Teens">
                 <label for="teens">Teens</label>
-                <input type="radio" name="category" id="adult">
+                <input type="radio" name="category" id="adult" value="Adult">
                 <label for="adult">Adult</label>
-                <input type="radio" name="category" id="elder">
+                <input type="radio" name="category" id="elder" value="Elder">
                 <label for="elder">Elder</label>
             </div>
             <div class="input-container mt-20" >
@@ -80,7 +89,9 @@
             </div>
             <div class="input-container">
                 <label for="image">Image : </label>
-                <input type="file" name="image" id="age" class="form-text">
+                <input type="file" name="image" id="age" class="form-text"
+                multiple
+                >
             </div>
             <input type="checkbox" name="final">
             <label for="final">I agree with the terms and conditions</label>
